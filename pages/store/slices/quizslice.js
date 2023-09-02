@@ -16,7 +16,7 @@ export const fetchquizData = createAsyncThunk("fetchData", async () => {
   }
 });
 
-const quizslice = createSlice({
+const quizSlice = createSlice({
   name: "quiz",
   initialState: {
     loading: false,
@@ -39,4 +39,4 @@ const quizslice = createSlice({
   },
 });
 
-export default quizslice.reducer;
+export default quizSlice.reducer;

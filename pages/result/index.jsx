@@ -4,7 +4,7 @@ import { useQuizContext } from '../components/QuizContext'
 import he from 'he'
 
 function Result() {
-  const { submittedCorrectAnswer, submittedQuestion, reportData, setReportData, quizData, newQuizData, result, yourAnswer, correctAnswer, submittedAnswers, } = useQuizContext()
+  const { quizData, newQuizData, result, submittedAnswers, } = useQuizContext()
   const [loading, setLoading] = useState(true)
 
   const quizDataMapped = quizData?.map((dataItem, index) => ({
@@ -12,10 +12,6 @@ function Result() {
     correctAnswer: dataItem.correct_answer,
     userAnswer: submittedAnswers[index] || '', // Ensure there is a user answer for each question
   }));
-
-  console.log('reportsss', submittedAnswers)
-
-
 
   return (
     <div className={styles.bodyWrapper}>

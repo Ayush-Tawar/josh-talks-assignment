@@ -36,7 +36,6 @@ export default function Questions() {
     };
 
     const handleSubmit = () => {
-        console.log('result', result)
         router.push('/result')
     }
 
@@ -65,10 +64,8 @@ export default function Questions() {
         setSubmittedAnswers([...submittedAnswers, decodedAnswer]);
         if (answer === correct_answer) {
             setSelectedAnswer(true);
-            console.log("right");
         } else {
             setSelectedAnswer(false);
-            console.log("wrong");
         }
 
         setResult((prev) =>
