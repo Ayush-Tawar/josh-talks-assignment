@@ -1,5 +1,5 @@
 import { QuizContextProvider } from "./components/QuizContext";
-import { wrapper } from "./store/store";
+import { wrapper } from "../store/store.js";
 import "/styles/globals.css";
 import { Provider } from "react-redux";
 export default function MyApp({ Component, ...rest }) {

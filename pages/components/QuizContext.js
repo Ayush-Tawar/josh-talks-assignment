@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchquizData } from '../store/slices/quizslice';
+import { fetchquizData } from '../../store/slices/quizslice';
 import he from 'he'
 // Create a context for your quiz-related states
 const QuizContext = createContext();
