@@ -1,0 +1,24 @@
+{
+  "name": "josh-talks-assignment",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "he": "^1.2.0",
+    "next": "13.4.19",
+    "next-redux-wrapper": "^8.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.1.2"
+  },
+  "devDependencies": {
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19"
+  }
+}

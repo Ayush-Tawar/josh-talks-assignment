@@ -1,0 +1,299 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+.bodywrapper {
+    width: 100%;
+}
+
+.mainContainer {
+    display: flex;
+    font-family: Montserrat;
+    gap: 50px;
+    padding: 5% 3%;
+    background-color: azure;
+
+}
+
+.welcomeContainer {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: azure;
+}
+
+.welcomeHeading {
+    margin: 0;
+}
+
+.input {
+    all: unset;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.emailForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.emailButton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(21, 21, 99);
+    color: white;
+    border: none;
+    font-size: 22px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.emailButton:hover {
+    background-color: rgb(162, 162, 184);
+    color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.timerWrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.timerHeading {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.time {
+    font-size: 32px;
+    font-family: Montserrat;
+    font-weight: bold;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    background-color: azure;
+    border-bottom: 2px solid lightgray;
+}
+
+.questionSection {
+
+    overflow-y: scroll;
+    height: 80vh;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.questionSection::-webkit-scrollbar {
+    width: 0.1rem;
+}
+
+.questionSection::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.questionSection::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.question {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.options {
+    margin-top: 10px;
+    padding: 10px;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: rgb(215, 224, 224);
+}
+
+.selectedOptions {
+    margin-top: 10px;
+    padding: 10px;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 7px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(93, 93, 239);
+}
+
+.options:hover {
+    background-color: rgb(173, 185, 230);
+}
+
+.selectedQuestion {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.selectedWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.questionWrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    display: flex;
+    gap: 10px;
+    padding: 2%;
+    cursor: pointer;
+
+}
+
+.questionWrapper:hover {
+    background-color: bisque;
+}
+
+.viewButton {
+    all: unset;
+    cursor: pointer;
+
+}
+
+.submitButton {
+    all: unset;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(93, 93, 239);
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.navDetail {
+    font-size: 16px;
+}
+
+.fullQuestionView {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 3%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+
+}
+
+.firstQuestion {
+    background-color: bisque;
+}
+
+.activeQuestion {
+    background-color:  bisque;
+    /* Set the background to yellow for the active question */
+}
+
+.visitedQuestion {
+    background-color: bisque;
+    /* Set the background to yellow for visited questions */
+}
+
+@media screen and (max-width: 700px) {
+    .mainContainer {
+        flex-direction: column-reverse;
+        padding: 20px;
+        gap: 30px;
+
+    }
+
+    .timerHeading {
+        display: none;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+
+    .fullQuestionView {
+        padding: 20px 5px;
+    }
+
+    .navbar {
+        gap: 30px;
+    }
+
+    .navDetail {
+        font-size: 12px;
+    }
+
+    .submitButton {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .question {
+        font-size: 12px;
+    }
+
+    .selectedQuestion {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .options {
+        font-size: 16px;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .timerHeading {
+        display: none;
+    }
+
+    .navDetail {
+        font-size: 8px;
+    }
+
+    .navbar {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .options {
+        font-size: 12px;
+    }
+}
